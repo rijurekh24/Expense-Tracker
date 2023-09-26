@@ -1,0 +1,145 @@
+.home {
+  height: 100vh;
+  background-color: #bee9ff;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(152, 204, 230);
+}
+
+.content {
+  background-color: #bee9ff;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  display: flex;
+  gap: 30px;
+}
+.expense-tracker {
+  color: #023047;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(16.5px);
+  -webkit-backdrop-filter: blur(16.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.expense-tracker h2 {
+  font-size: 30px;
+  font-weight: 500 !important;
+}
+
+.balance h4 {
+  font-weight: 600 !important;
+}
+
+.summary h5 {
+  font-weight: 600 !important;
+}
+
+.expense-tracker button {
+  padding: 10px 15px;
+  background-color: #023047;
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+  border: none;
+}
+
+.expense-tracker input {
+  padding: 8px 20px;
+  border: #023047 1px solid;
+  color: #023047;
+}
+
+.expense-tracker button:hover {
+  background-color: #436d84;
+  color: white;
+}
+
+.profile-photo {
+  width: 15%;
+  border-radius: 50%;
+}
+
+.sign-out-button {
+  border: none;
+  padding: 10px 15px;
+  background-color: #023047;
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+  border: none;
+}
+
+.sign-out-button:hover {
+  background-color: #436d84;
+  color: white;
+}
+
+.transactions {
+  border: 3px solid #023047;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(16.5px);
+  -webkit-backdrop-filter: blur(16.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.list {
+  height: 500px !important;
+  overflow-y: scroll !important;
+}
+.transactions h2 {
+  position: sticky;
+  top: 0;
+  background-color: #023047;
+  color: white;
+  padding: 10px 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+  .transactions {
+    margin-top: 3%;
+  }
+
+  .heading {
+    display: block;
+  }
+
+  .heading h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .user {
+    padding: 0 !important;
+  }
+
+  .sign-out-button {
+    font-size: 12px;
+  }
+
+  .right {
+    padding-bottom: 3%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .transactions {
+    margin-top: 3%;
+  }
+}
