@@ -24,7 +24,9 @@ const Auth = () => {
   }
 
   return (
-    <div className="login-page">
+    <div className="login-page text-center">
+      <h2>Welcome! to</h2>
+      <h1 className="mb-5 pb-5">Expense Tracker App</h1>
       {/* <p>Sign in With Google to Continue</p> */}
       <button className="login-with-google-btn" onClick={signInWithGoogle}>
         Sign in With Google
