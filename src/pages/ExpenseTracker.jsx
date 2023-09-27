@@ -78,7 +78,7 @@ const ExpenseTracker = () => {
 
       <div className="content container mt-3">
         <div className="row d-flex justify-content-center align-items-center">
-          <div className="expense-tracker col-lg-4 col-md-10 col-sm-10 col-11 mx-5 p-5">
+          <div className="expense-tracker col-lg-5 col-md-10 col-sm-10 col-11 mx-5 p-5">
             <div className="">
               <div className="balance">
                 <h4>Current Balance</h4>
