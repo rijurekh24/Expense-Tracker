@@ -78,7 +78,7 @@ const ExpenseTracker = () => {
 
       <div className="content container mt-3">
         <div className="row d-flex justify-content-center align-items-center">
-          <div className="expense-tracker col-lg-4 col-md-10 col-sm-10 col-10 mx-5 p-5">
+          <div className="expense-tracker col-lg-4 col-md-10 col-sm-10 col-11 mx-5 p-5">
             <div className="">
               <div className="balance">
                 <h4>Current Balance</h4>
@@ -143,7 +143,7 @@ const ExpenseTracker = () => {
             </div>
           </div>
 
-          <div className="transactions col-lg-3 col-sm-10 col-md-10 col-10 p-0">
+          <div className="transactions col-lg-3 col-sm-10 col-md-10 col-11 p-0">
             <h2 className="text-center">Transation History</h2>
             <div className="list">
               <ul>
