@@ -4,7 +4,6 @@ import {
   onSnapshot,
   orderBy,
   query,
-  snapshotEqual,
   where,
 } from "firebase/firestore";
 import { db } from "../config/firebase";
@@ -42,7 +41,7 @@ export const useGetTransactions = () => {
 
           docs.push({ ...data, id });
 
-          if (data.transactionType === "expense") {
+          if (data.transactionType === "Expense") {
             totalExpenses += Number(data.transactionAmount);
           } else {
             totalIncome += Number(data.transactionAmount);
