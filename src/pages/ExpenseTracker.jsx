@@ -83,18 +83,18 @@ const ExpenseTracker = () => {
             <div className="">
               <div className="balance">
                 <h4>Current Balance</h4>
-                {balance >= 0 ? <h2>${balance}</h2> : <h2>-${balance * -1}</h2>}
+                {balance >= 0 ? <h2>₹{balance}</h2> : <h2>-₹{balance * -1}</h2>}
                 <br />
               </div>
 
               <div className="summary">
                 <div className="income">
                   <h5>Income</h5>
-                  <p>${income}</p>
+                  <p>₹{income}</p>
                 </div>
                 <div className="expenses">
                   <h5>Expenses</h5>
-                  <p>${expenses}</p>
+                  <p>₹{expenses}</p>
                 </div>
               </div>
 
@@ -155,7 +155,7 @@ const ExpenseTracker = () => {
                     <li key={nanoid()}>
                       <h4>{description}</h4>
                       <p>
-                        ${transactionAmount}.
+                        ₹{transactionAmount}.
                         <label
                           style={{
                             color:
