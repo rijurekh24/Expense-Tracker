@@ -14,8 +14,8 @@ const ExpenseTracker = () => {
   const navigate = useNavigate();
 
   const [description, setDescription] = useState("");
-  const [transactionAmount, setTransactionAmount] = useState("");
-  const [transactionType, setTransactionType] = useState("expense");
+  const [transactionAmount, setTransactionAmount] = useState(0);
+  const [transactionType, setTransactionType] = useState("Expense");
 
   const { balance, expenses, income } = transactionTotals;
 
@@ -118,24 +118,24 @@ const ExpenseTracker = () => {
                 <div className="my-2">
                   <input
                     type="radio"
-                    id="expense"
-                    value="expense"
+                    id="Expense"
+                    value="Expense"
                     required
                     onChange={(e) => setTransactionType(e.target.value)}
-                    checked={transactionType === "expense"}
+                    checked={transactionType === "Expense"}
                   />
-                  <label htmlFor="expense" className="me-3">
+                  <label htmlFor="Expense" className="me-3">
                     Expense
                   </label>
                   <input
                     type="radio"
-                    id="income"
-                    value="income"
+                    id="Income"
+                    value="Income"
                     required
                     onChange={(e) => setTransactionType(e.target.value)}
-                    checked={transactionType === "income"}
+                    checked={transactionType === "Income"}
                   />
-                  <label htmlFor="income">Income</label>
+                  <label htmlFor="Income">Income</label>
                 </div>
                 <br />
                 <button type="submit">Add Transaction</button>
@@ -158,7 +158,7 @@ const ExpenseTracker = () => {
                         <label
                           style={{
                             color:
-                              transactionType === "expense" ? "red" : "green",
+                              transactionType === "Expense" ? "red" : "green",
                             fontWeight: "600",
                           }}
                         >
