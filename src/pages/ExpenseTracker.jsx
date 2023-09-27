@@ -6,6 +6,7 @@ import { useGetUserInfo } from "../hooks/useGetUserInfo";
 import { signOut } from "firebase/auth";
 import { auth } from "../config/firebase";
 import { useNavigate } from "react-router-dom";
+import { nanoid } from "nanoid";
 
 const ExpenseTracker = () => {
   const { addTransaction } = useAddTransaction();
@@ -151,7 +152,7 @@ const ExpenseTracker = () => {
                   const { description, transactionAmount, transactionType } =
                     transaction;
                   return (
-                    <li>
+                    <li key={nanoid()}>
                       <h4>{description}</h4>
                       <p>
                         ${transactionAmount}.
