@@ -1,4 +1,4 @@
-Expense Tracker Application
+#Expense Tracker Application
  
 Technology Stack used: React.js + Vite , Bootstrap, Firebase
 
